@@ -93,7 +93,7 @@ If you're working on projects with the agent, use git. If the agent makes a chan
 
 ## The fear vs. the reality
 
-We've been running local agents for weeks. In that time:
+We've been running local agents for several months. In that time:
 
 - **An agent crashed itself trying to update.** It was scary for about 10 minutes. Then we fixed it. The crash was because the agent didn't research before acting — a context problem, not a security problem. We added a rule. It hasn't happened again.
 - **An agent filled its memory and couldn't remember anything new.** Annoying, not dangerous. We restructured its memory and built a knowledge base. Problem solved permanently.
