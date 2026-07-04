@@ -1,0 +1,8 @@
+# Local command binaries or scratch files
+/just
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+*.swp
+*.tmp

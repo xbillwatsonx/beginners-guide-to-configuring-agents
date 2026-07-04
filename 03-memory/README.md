@@ -63,7 +63,7 @@ By the end of this section, you should be able to:
 - [Sticky Note vs Filing Cabinet](sticky-note-vs-filing-cabinet.md)
 - [Memory vs Knowledge Base](memory-vs-knowledge-base.md)
 - [Memory Audit Prompt](memory-audit-prompt.md)
-- [Hannah Memory Story Draft](hannah-memory-story-draft.md) - draft only, requires Bill approval before public use
+- [Hannah Memory Teaching Example](hannah-memory-teaching-example.md) - short version of the approved real story
 
 ## Where to go next
 

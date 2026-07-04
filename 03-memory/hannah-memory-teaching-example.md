@@ -1,10 +1,10 @@
-# Hannah Memory Story Draft
+# Hannah Memory Teaching Example
 
-> Draft status: This story is included as working material for review. It is based on a real event and requires Bill's approval before being treated as final public content.
+> Story status: Short teaching version of an approved real story. The full version lives in `../06-real-stories/hannah-memory-full.md`.
 
 ## The short version
 
-One of our agents, Hannah, ran out of useful memory space because she was using memory like a storage cabinet.
+One of our agents, Hannah (Windows Hermes agent instance), ran out of useful memory space because she was using memory like a storage cabinet.
 
 She was saving too much knowledge into a small always-loaded memory file. The fix was to move long-term reference material into a knowledge base and leave memory as a short set of pointers.
 
@@ -31,7 +31,7 @@ But not everything important belongs in memory.
 
 The fix was a migration.
 
-Hermes wrote Hannah a step-by-step prompt:
+Hermes (Ubuntu agent instance) wrote Hannah a step-by-step prompt:
 
 1. inspect the existing knowledge base
 2. audit the memory file
@@ -88,6 +88,6 @@ Once we separated memory from knowledge, the system became easier to trust and e
 ## Notes
 
 - Bill approved using Hannah's name and memory story.
-- This trimmed teaching version lives in `03-memory/`. An expanded version may be moved to `06-real-stories/` after Bill approves the final story draft.
+- This trimmed teaching version lives in `03-memory/`. The expanded version lives in `06-real-stories/`.
 - No real paths, API keys, or sensitive personal information are included.
 - The knowledge base is described generically rather than by its real name.
