@@ -1,6 +1,6 @@
 # Hannah Memory Teaching Example
 
-> Story status: Short teaching version of an approved real story. The full version lives in `../06-real-stories/hannah-memory-full.md`.
+> This is a public-safe teaching version of the full story in `../06-real-stories/hannah-memory-full.md`.
 
 ## The short version
 
@@ -84,10 +84,3 @@ This was not a failure of the AI model. It was a storage problem.
 The agent had the wrong kind of information in the wrong place.
 
 Once we separated memory from knowledge, the system became easier to trust and easier to maintain.
-
-## Notes
-
-- Bill approved using Hannah's name and memory story.
-- This trimmed teaching version lives in `03-memory/`. The expanded version lives in `06-real-stories/`.
-- No real paths, API keys, or sensitive personal information are included.
-- The knowledge base is described generically rather than by its real name.

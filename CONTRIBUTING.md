@@ -18,7 +18,7 @@ Did you figure out a repeatable process for something — setting up memory, con
 Did we get something wrong? Is a command outdated? Is a concept explained badly? Open an issue or submit a pull request. We'd rather be corrected than be wrong.
 
 ### Prompts
-Do you have a prompt that works well for configuring an agent, auditing memory, or doing setup? Add it to the relevant `prompts/` folder.
+Do you have a prompt that works well for configuring an agent, auditing memory, or doing setup? Add it to the relevant section, such as `02-context/`, `03-memory/`, `04-maintenance/`, `05-buddy-system/`, or `templates/`.
 
 ## How to contribute
 

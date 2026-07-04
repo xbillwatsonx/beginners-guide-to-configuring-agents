@@ -36,6 +36,14 @@ This guide walks you through everything that happens *after* the install command
 | [07 - Creators](07-creators) | People worth following who create helpful content in this space |
 | [Templates](templates) | Copy-paste templates for AGENTS.md, SOUL.md, and memory files |
 
+If you are brand new, read in order:
+
+1. [Why Setup Matters](00-start-here/why-setup-matters.md)
+2. [What to Expect](00-start-here/what-to-expect.md)
+3. [Hermes Install Guide](01-install/hermes-install-guide.md)
+4. [Post-Install Checklist](01-install/post-install-checklist.md)
+5. [Copy-Paste Context Prompts](02-context/copy-paste-prompts.md)
+
 ## Our approach
 
 **Real over polished.** We write about things that actually happened to us — crashes, mistakes, confusion, fixes. Not theoretical best practices.

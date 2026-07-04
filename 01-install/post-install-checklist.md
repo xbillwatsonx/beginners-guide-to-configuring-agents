@@ -4,7 +4,7 @@ After installing Hermes, run through this checklist before doing anything else. 
 
 ## ✅ Core files exist
 
-Check that `hermes init` created everything it should have:
+Check that Hermes created its home folder and setup files:
 
 ```bash
 ls ~/.hermes/
@@ -17,12 +17,12 @@ You should see:
 - `memories/` directory ✓
 - `skills/` directory ✓
 
-If any are missing, re-run `hermes init`.
+Exact files can vary by Hermes version and platform. If the folder is missing or the setup looks incomplete, run `hermes setup` again. If you only need to change the model, run `hermes model`.
 
 ## ✅ Model is configured and responding
 
 ```bash
-hermes chat
+hermes
 ```
 
 Ask it: "What is 2+2?" If it answers, your model is working. If it doesn't, go back to the [install guide](hermes-install-guide.md) and check your model config.
@@ -32,8 +32,11 @@ Ask it: "What is 2+2?" If it answers, your model is working. If it doesn't, go b
 Open `~/.hermes/.env` and verify your API keys are there (if using a cloud provider). They should NOT be in `config.yaml` — config files can accidentally get shared or committed to git. `.env` is the safe place.
 
 ```bash
-# This should show your keys
-cat ~/.hermes/.env
+# This confirms the file exists
+ls -l ~/.hermes/.env
+
+# This shows which key names are set without exposing the values
+sed 's/=.*/=<set>/' ~/.hermes/.env
 
 # This should NOT show any keys
 grep -i "key\|token\|secret" ~/.hermes/config.yaml

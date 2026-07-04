@@ -4,10 +4,9 @@
 
 Before you install Hermes, you need:
 
-1. **A computer running Linux, macOS, or Windows with WSL** (Windows Subsystem for Linux)
-   - On Windows, we recommend using WSL (Ubuntu) — it's the most tested path
-   - Native Windows works too via the desktop app, but some things are easier in WSL
-2. **Python 3.11 or newer**
+1. **A computer running Linux, macOS, Windows, WSL2, or Termux**
+   - On macOS or Windows, the Hermes Desktop installer is the easiest path for most beginners
+   - On Linux, WSL2, macOS terminal, or Termux, the command-line installer works well
 3. **An AI model to talk to** — either:
    - A local model via [Ollama](https://ollama.ai) (free, runs on your machine)
    - A cloud model via an API provider (OpenRouter, OpenAI, Anthropic, etc.)
@@ -19,21 +18,33 @@ Before you install Hermes, you need:
 
 ### Step 1: Install Hermes
 
-On Linux/macOS/WSL:
+On macOS or Windows, the simplest beginner path is the Hermes Desktop installer from the [Hermes website](https://hermes-agent.nousresearch.com).
+
+If you want the command-line install instead, use the command for your system.
+
+On Linux, macOS, WSL2, or Termux:
 
 ```bash
-pip install hermes-agent
+curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash
 ```
 
-On native Windows, you can use the desktop installer from the [Hermes website](https://hermes-agent.nousresearch.com).
+On native Windows, run this in PowerShell:
 
-### Step 2: Initialize your Hermes workspace
+```powershell
+iex (irm https://hermes-agent.nousresearch.com/install.ps1)
+```
+
+After installation, reload your terminal or open a new one so the `hermes` command is available.
+
+### Step 2: Run Hermes setup
 
 ```bash
-hermes init
+hermes setup
 ```
 
-This creates your Hermes home directory (usually `~/.hermes/`) with the basic structure:
+This walks you through the first setup. Hermes stores its user files in a Hermes home directory. On Linux, macOS, WSL2, and Termux, that is usually `~/.hermes/`.
+
+You may see files and folders like:
 
 ```
 ~/.hermes/
@@ -47,6 +58,8 @@ This creates your Hermes home directory (usually `~/.hermes/`) with the basic st
 └── skills/          — where reusable workflows live
 ```
 
+Exact files can change as Hermes evolves, so do not worry if your folder is not identical. The important thing is that Hermes can start, remember its config, and reach your chosen model.
+
 ### Step 3: Choose your AI model
 
 This is where a lot of beginners get stuck. Let's break it down simply:
@@ -55,7 +68,7 @@ This is where a lot of beginners get stuck. Let's break it down simply:
 
 1. Install [Ollama](https://ollama.ai)
 2. Pull a model: `ollama pull llama3.2` (or another model of your choice)
-3. In your Hermes config, set the provider to ollama and the model to whatever you pulled
+3. Run `hermes model` and choose Ollama as your provider
 
 Local models are free, private, and run entirely on your machine. They're less capable than cloud models but good enough for most tasks. Great for learning and experimentation.
 
@@ -63,8 +76,8 @@ Local models are free, private, and run entirely on your machine. They're less c
 
 1. Sign up for an API provider (OpenRouter is a good starting point — it gives you access to many models with one key)
 2. Get your API key
-3. Put the key in your `.env` file
-4. In your Hermes config, set the provider and model
+3. Run `hermes model` and follow the prompts for your provider and model
+4. Or run `hermes setup --portal` if you want to use Nous Portal
 
 Cloud models are smarter and faster but cost money per message. For text tasks, costs are usually small (pennies per conversation). For heavy coding work, costs add up faster.
 
@@ -73,7 +86,7 @@ Cloud models are smarter and faster but cost money per message. For text tasks, 
 ### Step 4: Test it
 
 ```bash
-hermes chat
+hermes
 ```
 
 You should be able to have a basic conversation. If this works, the install is done. If it doesn't, check the [troubleshooting section](#troubleshooting) below.
@@ -82,10 +95,18 @@ You should be able to have a basic conversation. If this works, the install is d
 
 | Problem | Likely cause | Fix |
 |---------|-------------|-----|
-| `command not found: hermes` | pip install didn't complete or isn't in PATH | Try `pip install --user hermes-agent`, then check your PATH |
-| Agent doesn't respond | Model not configured or not running | Check config.yaml has the right provider and model. If using Ollama, make sure Ollama is running (`ollama serve`) |
+| `command not found: hermes` | Your shell has not reloaded or the install path is not on PATH | Open a new terminal, reload your shell, then try `hermes` again |
+| Agent doesn't respond | Model not configured or not running | Run `hermes model` or `hermes setup`. If using Ollama, make sure Ollama is running (`ollama serve`) |
 | Permission errors | File permissions on ~/.hermes/ | `sudo chown -R $USER:$USER ~/.hermes/` |
 | Model is slow | Local model on weak hardware | Use a smaller model, or switch to a cloud provider |
+
+Hermes also includes a diagnostic command:
+
+```bash
+hermes doctor
+```
+
+Run that when something feels broken and you want Hermes to check the setup.
 
 ## What to do next
 

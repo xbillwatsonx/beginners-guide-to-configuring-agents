@@ -14,7 +14,6 @@ These stories explain what happened, how we fixed it, and what a beginner should
 
 - Bill Watson - human owner and operator
 - Hermes - Ubuntu agent instance
-- Alex - OpenClaw Coordinator Agent
 - Hannah - Hermes agent instance running on a separate Windows system
 
 ## Stories in this section

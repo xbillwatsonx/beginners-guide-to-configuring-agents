@@ -67,6 +67,8 @@ Give me a short review and a corrected final draft.
 
 ## 4. Save approved files
 
+The paths below are Hermes-specific. If you use another agent harness, ask your agent where its equivalent files live before writing.
+
 ```text
 I approve these drafts.
 

@@ -27,7 +27,7 @@ That's the real difference. And it's worth being thoughtful about.
 
 ## What an agent cannot do
 
-- **It cannot act on its own.** Agents don't do things unless you ask them to. There's no background process making decisions without you. (Scheduled tasks exist, but you set them up explicitly and approve them.)
+- **It should not act on its own unless you explicitly configure automation.** Normal agent work starts because you ask for it. Scheduled tasks, messaging gateways, and unattended workflows can run in the background, but those are things you configure deliberately.
 - **It cannot access things your user account can't access.** If you can't read a file, neither can the agent. It runs with your permissions, not more.
 - **It cannot "escape" your computer.** It's a program running on your machine. It can't jump to other machines on your network unless you explicitly give it access.
 - **It cannot modify its own core code without you knowing.** Hermes, specifically, requires explicit commands to update itself. And you can write rules that prevent it from trying.
@@ -36,7 +36,7 @@ That's the real difference. And it's worth being thoughtful about.
 
 | Risk | How real is it? | How to manage it |
 |------|-----------------|------------------|
-| Agent deletes important files | Low — agents ask before destructive actions by default | Set hard rules in AGENTS.md about what folders are off-limits. Use version control (git) on important projects. |
+| Agent deletes important files | Varies by tool and configuration | Require approval before destructive actions. Set hard rules in AGENTS.md about what folders are off-limits. Use version control (git) on important projects. |
 | Agent runs a dangerous command | Low — agents explain before acting by default | Tell the agent to explain before executing. Use the approval prompts. Don't give it passwordless sudo unless you trust it. |
 | Agent exposes sensitive data (API keys, passwords) | Medium — if the agent reads a file with secrets and pastes them somewhere | Keep secrets in environment files (`.env`) that the agent reads but doesn't echo. Tell the agent never to print secrets. |
 | Agent sends messages you didn't intend | Low — messaging is opt-in and you approve connections | Don't connect messaging platforms until you're comfortable. Review what the agent can send before connecting. |
