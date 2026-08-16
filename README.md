@@ -2,7 +2,9 @@
 
 **You installed an AI agent. Now what?**
 
-This is a beginner-friendly, hype-free guide to setting up and configuring your first local AI agent harness. We use [Hermes Agent](https://hermes-agent.nousresearch.com) as the worked example throughout — but the concepts, patterns, and lessons transfer to any local agent harness you might use now or in the future.
+This is a beginner-friendly, hype-free guide to setting up and configuring your first local AI agent harness.
+
+A **harness** is the program that runs your AI agent and gives it tools to read and write files, run commands, and work with you. It is the "body" the AI runs inside. We use [Hermes Agent](https://hermes-agent.nousresearch.com) as the worked example throughout, but the concepts, patterns, and lessons transfer to any local agent harness you might use now or in the future.
 
 ## Who this is for
 

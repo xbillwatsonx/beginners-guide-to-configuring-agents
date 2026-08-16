@@ -87,6 +87,14 @@ Once you've done the orientation, you're ready to start real work. But keep it s
 2. **Ask it to read a file** and summarize it. See if it reads the right file and gives you an accurate summary.
 3. **Ask it to write a small file.** A todo list, a summary of a project, anything low-stakes. Check the file. Is it what you wanted?
 4. **Correct it.** If it got something wrong — and it will — correct it and ask it to save the correction. This is how it learns.
+5. **If the agent responds unexpectedly or does something you didn't ask for:**
+   - Say "stop" immediately.
+   - Do not approve any further actions.
+   - Ask the agent what it did or planned to do.
+   - Inspect any files that were changed.
+   - Request a rollback if something was modified that shouldn't have been.
+   - Correct the misunderstanding in plain language.
+   - Save a durable rule only after you review what happened and are satisfied the correction is right.
 
 Each small interaction teaches you how the agent thinks and teaches the agent how you work. By the end of the first day, you'll have a feel for each other.
 
@@ -97,6 +105,17 @@ Each small interaction teaches you how the agent thinks and teaches the agent ho
 The agent can only work with what you give it. Vague prompts produce vague results. Specific prompts produce specific results. This is true on day one and it's true on day three hundred.
 
 When in doubt, give more context, not less. It's always better to tell the agent something it already knows than to assume it knows something it doesn't.
+
+## How much detail is enough?
+
+There is a balance between "give more context" and "don't overshare." Here is the rule:
+
+- **Share what the agent needs to help you**: your name, your work, your projects, your preferences, your computer setup, your hard rules.
+- **Do not share**: passwords, API keys, financial account numbers, customer personal data, medical details, family information, or anything you would not write on a whiteboard in a shared office.
+- **Use placeholders** when specifics matter but the real value is sensitive: "my customer's email" instead of the actual address, "the production server" instead of the IP.
+- **Ask where data goes** before sharing sensitive information: "Where does this chat data get stored? Is it sent to a cloud provider? Can it be committed to a repo?" If you are not comfortable with the answer, do not share.
+
+A good minimum useful context is: your name, what you do, one or two active projects, your computer and workspace, your communication preferences, and your hard rules. That is enough to start. You can always add more later.
 
 ## Where to go next
 

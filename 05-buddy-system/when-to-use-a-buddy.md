@@ -99,3 +99,15 @@ Inspect first. Report findings. Propose changes. Wait for approval before editin
 ```
 
 That keeps the buddy system helpful instead of chaotic.
+
+## Buddy access safety
+
+When you give a second agent access to the first agent's files, keep these boundaries:
+
+- **Least privilege**: the buddy should only read the specific files it needs to inspect. Do not give it blanket access to the whole workspace.
+- **No credentials**: the buddy must not read `.env` files, API keys, SSH keys, password stores, or any secrets folder. Exclude those before the buddy starts.
+- **Read-only first**: the buddy should inspect and report before it is allowed to edit anything. Approval is required before each edit.
+- **Sensitive-file boundaries**: if the main agent's workspace contains customer data, financial records, or private correspondence, tell the buddy to skip those files.
+- **Scope limit**: give the buddy a specific task, not open-ended access. "Inspect the AGENTS.md and MEMORY.md files and report what looks wrong" is safe. "Look around and fix things" is not.
+- **Audit trail**: after the buddy finishes, record what it inspected, what it changed, and what it recommended. This creates a repair trail you can review later.
+- **Revoking access**: when the buddy is done, it does not need ongoing access. Its job is finished.
