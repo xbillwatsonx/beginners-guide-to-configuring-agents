@@ -62,6 +62,72 @@ Do not edit files. This is a report-only check.
 
 You can paste that manually once a week. Later, if your harness supports scheduled tasks, you can schedule it.
 
+### A complete cron example
+
+If you are on Linux, macOS, or WSL, here is a complete beginner-safe cron setup:
+
+**1. Create a small script:**
+
+```bash
+#!/bin/bash
+# weekly-agent-check.sh
+# Run this from cron to produce a report-only health check
+
+echo "=== Weekly Agent Health Check ==="
+echo "Date: $(date)"
+echo ""
+
+echo "--- AGENTS.md exists? ---"
+if [ -f ~/.hermes/AGENTS.md ]; then echo "YES"; else echo "MISSING"; fi
+
+echo "--- SOUL.md exists? ---"
+if [ -f ~/.hermes/SOUL.md ]; then echo "YES"; else echo "MISSING"; fi
+
+echo "--- MEMORY.md size ---"
+wc -c ~/.hermes/memories/MEMORY.md 2>/dev/null || echo "MISSING"
+
+echo "--- Disk space ---"
+df -h ~ | tail -1
+
+echo "=== Check complete ==="
+```
+
+**2. Make it executable:**
+
+```bash
+chmod +x ~/weekly-agent-check.sh
+```
+
+**3. Add it to cron:**
+
+Open your crontab:
+
+```bash
+crontab -e
+```
+
+Add this line to run it every Sunday at 7 AM:
+
+```
+0 7 * * 0 /home/YOURNAME/weekly-agent-check.sh >> /home/YOURNAME/agent-check.log 2>&1
+```
+
+**4. Verify it was added:**
+
+```bash
+crontab -l
+```
+
+**5. To remove it later:**
+
+```bash
+crontab -e
+# Delete the line, save, and exit
+crontab -l
+```
+
+This script only reports. It does not edit files, delete anything, or run paid models. The output goes to `agent-check.log` so you can review it later.
+
 ## Linux, macOS, and WSL: cron
 
 On Linux, macOS, or WSL, scheduled tasks often use `cron`.

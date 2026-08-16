@@ -20,6 +20,8 @@ When we say "configure your agent," we don't mean changing settings in a config 
 4. **Setting up maintenance** — scheduled checks that keep the agent healthy over time
 5. **Teaching the agent how you work** — your conventions, your preferences, the things you'd have to repeat every session if they weren't written down
 
+In other words, **context** is the background information and instructions the agent receives so it can understand your situation. Without context, the agent is smart but clueless about your world. With context, it can actually help.
+
 Think of it like hiring a new assistant. On day one, they're capable but clueless about *your* world. You have to show them around — where the files are, how you like things done, what matters to you. After a few weeks of orientation, they're productive. Same thing here, except the "orientation" is done through files and prompts instead of conversations.
 
 ## What happens if you skip setup

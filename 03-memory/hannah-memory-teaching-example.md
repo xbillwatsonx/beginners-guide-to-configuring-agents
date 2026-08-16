@@ -53,6 +53,35 @@ After the cleanup:
 - memory pointed to the knowledge base when deeper context was needed
 - future sessions had a clearer starting point
 
+### Before: what Hannah's memory looked like
+
+```markdown
+# MEMORY.md (before, ~2,100 chars, nearly full)
+
+- User prefers plain language, step-by-step help, and short answers.
+- Main workspace is /home/hannah/projects.
+- Never use paid API providers without permission.
+- The customer intake process has 7 steps: receive request, log it, confirm scope, assign owner, set deadline, notify team, archive. Full details in the customer service playbook.
+- The garden app uses React frontend, Flask backend, SQLite database, and runs on port 5000. Deploy with `gunicorn app:app`.
+- Last week we fixed a Stripe webhook bug where the event type was mismatched. The fix was changing `checkout.session.completed` to `checkout.session.async_payment_succeeded` in the webhook handler.
+- Jamie's birthday is March 15.
+- The backup script runs nightly at 2 AM and copies to the external drive.
+```
+
+### After: what Hannah's memory looked like
+
+```markdown
+# MEMORY.md (after, ~400 chars, plenty of room)
+
+- User prefers plain language, step-by-step help, and short answers.
+- Main workspace is /home/hannah/projects.
+- Never use paid API providers without permission.
+- Project docs and reference material live in ~/knowledge-base. Search there before guessing.
+- Backup script runs nightly at 2 AM.
+```
+
+The customer intake process, garden app stack details, and Stripe bug fix all moved to the knowledge base where they could be searched when needed instead of loaded every session.
+
 That is the pattern beginners should copy.
 
 ## The beginner lesson

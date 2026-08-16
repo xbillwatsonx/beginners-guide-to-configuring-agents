@@ -57,6 +57,19 @@ By the end of this section, you should be able to:
 - decide what to keep, move, or delete
 - write a memory cleanup prompt
 - avoid filling memory with things that belong somewhere else
+- understand how memory persists between sessions and what happens when a chat ends
+
+## Will closing this chat erase what we discussed?
+
+No, but only if the agent saved what you told it to its memory and context files. Here is the lifecycle:
+
+1. **During a chat**: the agent reads its memory file when it starts. It can also write to it if you ask it to save something.
+2. **When you close the chat**: the conversation itself may or may not be saved by your harness. But the memory file on disk is what the next session will load.
+3. **When a new session starts**: the agent loads its memory file and context files again. It does not automatically remember the full previous conversation.
+4. **How to confirm something was saved**: ask the agent to show you what it wrote to memory. Check the actual file on disk (for Hermes, `~/.hermes/memories/MEMORY.md`). If it is there, it will persist. If it is only in the chat, it will not.
+5. **What must be saved elsewhere**: long reference material belongs in a knowledge base or project docs, not in memory. Conversations that contain important decisions should be summarized and saved to a durable file.
+
+Do not assume the agent automatically saves everything you discuss. If it matters, ask the agent to save it and then verify it was written.
 
 ## Files in this section
 
