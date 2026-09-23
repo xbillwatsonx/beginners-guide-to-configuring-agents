@@ -1,3 +1,5 @@
+
+
 # Beginner's Guide to Configuring Agents
 
 **You installed an AI agent. Now what?**
@@ -44,7 +46,8 @@ If you are brand new, read in order:
 2. [What to Expect](00-start-here/what-to-expect.md)
 3. [Hermes Install Guide](01-install/hermes-install-guide.md)
 4. [Post-Install Checklist](01-install/post-install-checklist.md)
-5. [Copy-Paste Context Prompts](02-context/copy-paste-prompts.md)
+5. [Your First Conversation](01-install/first-conversation.md)
+6. [Copy-Paste Context Prompts](02-context/copy-paste-prompts.md)
 
 ## Our approach
 
