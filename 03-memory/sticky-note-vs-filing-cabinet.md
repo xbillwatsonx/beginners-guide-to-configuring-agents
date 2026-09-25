@@ -10,7 +10,7 @@ One is a filing cabinet across the room.
 
 The sticky note is always visible. The agent sees it immediately every time it starts. But there is not much room.
 
-In Hermes, memory has a hard limit: **2,200 characters** for `MEMORY.md` and **1,375 characters** for `USER.md`. That is roughly 30 short facts combined — a few lines, not a few pages. When it is full, it is full.
+In Hermes, memory has a hard limit: **2,200 characters** for `MEMORY.md` and **1,375 characters** for `USER.md`. That is roughly 30 short facts combined, a few lines, not a few pages. When it is full, it is full.
 
 The filing cabinet can hold thousands of pages. But the agent has to know when to go look.
 

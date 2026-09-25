@@ -6,7 +6,7 @@ Here's the single most important thing to understand about your new agent:
 
 **It doesn't know you.**
 
-When you install a local AI agent, it starts fresh. No memory of your name, your projects, your preferences, your computer setup, or what you're trying to accomplish. Every time it starts a new session, it's back to zero — a smart person with complete amnesia.
+When you install a local AI agent, it starts fresh. No memory of your name, your projects, your preferences, your computer setup, or what you're trying to accomplish. Every time it starts a new session, it's back to zero, a smart person with complete amnesia.
 
 This isn't a bug. It's not a limitation of the software. It's just how local agents work. The agent is a capable engine, but it has no steering wheel until you give it one.
 
@@ -14,15 +14,15 @@ This isn't a bug. It's not a limitation of the software. It's just how local age
 
 When we say "configure your agent," we don't mean changing settings in a config file (though there's some of that). We mean:
 
-1. **Telling the agent who you are** — your name, your role, what you do, how you like to work
-2. **Telling the agent where it is** — what computer it's running on, what tools are available, where your files live
-3. **Giving the agent a knowledge base** — a place to store and find information that's too big for its memory but too important to forget
-4. **Setting up maintenance** — scheduled checks that keep the agent healthy over time
-5. **Teaching the agent how you work** — your conventions, your preferences, the things you'd have to repeat every session if they weren't written down
+1. **Telling the agent who you are**, your name, your role, what you do, how you like to work
+2. **Telling the agent where it is**, what computer it's running on, what tools are available, where your files live
+3. **Giving the agent a knowledge base**, a place to store and find information that's too big for its memory but too important to forget
+4. **Setting up maintenance**, scheduled checks that keep the agent healthy over time
+5. **Teaching the agent how you work**, your conventions, your preferences, the things you'd have to repeat every session if they weren't written down
 
 In other words, **context** is the background information and instructions the agent receives so it can understand your situation. Without context, the agent is smart but clueless about your world. With context, it can actually help.
 
-Think of it like hiring a new assistant. On day one, they're capable but clueless about *your* world. You have to show them around — where the files are, how you like things done, what matters to you. After a few weeks of orientation, they're productive. Same thing here, except the "orientation" is done through files and prompts instead of conversations.
+Think of it like hiring a new assistant. On day one, they're capable but clueless about *your* world. You have to show them around, where the files are, how you like things done, what matters to you. After a few weeks of orientation, they're productive. Same thing here, except the "orientation" is done through files and prompts instead of conversations.
 
 ## What happens if you skip setup
 
@@ -41,11 +41,11 @@ The difference between an agent that feels useless and one that feels like a rea
 - It can find information in your knowledge base instead of guessing
 - It knows your hard rules (don't use paid APIs without permission, don't touch certain folders)
 - It has scheduled maintenance that keeps it from degrading over time
-- When something breaks, you have a buddy system to fix it — another agent that can help diagnose and repair
+- When something breaks, you have a buddy system to fix it, another agent that can help diagnose and repair
 
 ## The time investment
 
-This isn't a weekend project. Expect to spend real time on it — not all at once, but over the first few weeks of working with your agent. Here's a rough picture:
+This isn't a weekend project. Expect to spend real time on it, not all at once, but over the first few weeks of working with your agent. Here's a rough picture:
 
 | What | Time | When |
 |------|------|------|

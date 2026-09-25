@@ -7,10 +7,10 @@ Before you install Hermes, you need:
 1. **A computer running Linux, macOS, Windows, WSL2, or Termux**
    - On macOS or Windows, the Hermes Desktop installer is the easiest path for most beginners
    - On Linux, WSL2, macOS terminal, or Termux, the command-line installer works well
-3. **An AI model to talk to** — either:
+3. **An AI model to talk to**, either:
    - A local model via [Ollama](https://ollama.ai) (free, runs on your machine)
    - A cloud model via an API provider (OpenRouter, OpenAI, Anthropic, etc.)
-4. **A terminal** — the command line is where Hermes lives
+4. **A terminal**, the command line is where Hermes lives
 
 ## The install
 
@@ -48,14 +48,14 @@ You may see files and folders like:
 
 ```
 ~/.hermes/
-├── config.yaml      — your main config file
-├── .env             — where API keys go (never share this)
-├── SOUL.md          — your agent's personality and operating principles
-├── AGENTS.md        — your agent's environment context (you'll write this)
+├── config.yaml, your main config file
+├── .env, where API keys go (never share this)
+├── SOUL.md, your agent's personality and operating principles
+├── AGENTS.md, your agent's environment context (you'll write this)
 ├── memories/
-│   ├── MEMORY.md    — your agent's compact memory (2,200 char limit)
-│   └── USER.md      — who you are (1,375 char limit)
-└── skills/          — where reusable workflows live
+│   ├── MEMORY.md, your agent's compact memory (2,200 char limit)
+│   └── USER.md, who you are (1,375 char limit)
+└── skills/, where reusable workflows live
 ```
 
 Exact files can change as Hermes evolves, so do not worry if your folder is not identical. The important thing is that Hermes can start, remember its config, and reach your chosen model.
@@ -74,7 +74,7 @@ Local models are free, private, and run entirely on your machine. They're less c
 
 **Option B: Cloud model via API (paid)**
 
-1. Sign up for an API provider (OpenRouter is a good starting point — it gives you access to many models with one key)
+1. Sign up for an API provider (OpenRouter is a good starting point, it gives you access to many models with one key)
 2. Get your API key
 3. Run `hermes model` and follow the prompts for your provider and model
 4. Or run `hermes setup --portal` if you want to use Nous Portal
@@ -112,6 +112,6 @@ Run that when something feels broken and you want Hermes to check the setup.
 
 Don't skip ahead to the fun stuff. The install is done, but your agent is a blank slate. The next two sections are the most important part of this entire guide:
 
-1. [Post-Install Checklist](post-install-checklist.md) — a quick verification that everything is set up right
-2. [Your First Conversation](first-conversation.md) — what to say (and not say) to your agent on day one
-3. Then [02 - Context](../02-context) — where the real transformation happens
+1. [Post-Install Checklist](post-install-checklist.md), a quick verification that everything is set up right
+2. [Your First Conversation](first-conversation.md), what to say (and not say) to your agent on day one
+3. Then [02 - Context](../02-context), where the real transformation happens

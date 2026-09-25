@@ -29,7 +29,7 @@ Ask it: "What is 2+2?" If it answers, your model is working. If it doesn't, go b
 
 ## ✅ API keys are in .env, not in config
 
-Open `~/.hermes/.env` and verify your API keys are there (if using a cloud provider). They should NOT be in `config.yaml` — config files can accidentally get shared or committed to git. `.env` is the safe place.
+Open `~/.hermes/.env` and verify your API keys are there (if using a cloud provider). They should NOT be in `config.yaml`, config files can accidentally get shared or committed to git. `.env` is the safe place.
 
 ```bash
 # This confirms the file exists
@@ -115,7 +115,7 @@ Bookmark or note the location of the official Hermes docs:
 - **Online:** https://hermes-agent.nousresearch.com/docs
 - **Local cache:** `~/.hermes/reference/hermes-docs/` (if downloaded)
 
-These are your reference when something goes wrong. Your agent should also know about them — add a line to AGENTS.md:
+These are your reference when something goes wrong. Your agent should also know about them, add a line to AGENTS.md:
 
 ```
 For Hermes config/upgrades/troubleshooting, check the official docs: https://hermes-agent.nousresearch.com/docs
