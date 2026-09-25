@@ -34,17 +34,17 @@ Your first conversation should be about **orientation**, not tasks. Here's a fra
 
 ```
 My name is [name].
-I do [what you do — your job, your business, your main projects].
-I'm [your experience level with tech — be honest].
-I prefer [how you like to communicate — plain language, detailed explanations, brief answers].
+I do [what you do, your job, your business, your main projects].
+I'm [your experience level with tech, be honest].
+I prefer [how you like to communicate, plain language, detailed explanations, brief answers].
 ```
 
 ### 2. Tell it where it is
 
 ```
-You're running on [your OS — Linux, macOS, Windows WSL, native Windows].
+You're running on [your OS - Linux, macOS, Windows WSL, native Windows].
 My main workspace is [path to your working folder].
-I also work on [other locations — other drives, cloud folders, etc.].
+I also work on [other locations, other drives, cloud folders, etc.].
 ```
 
 ### 3. Set your hard rules
@@ -53,7 +53,7 @@ I also work on [other locations — other drives, cloud folders, etc.].
 Before we start, here are my hard rules:
 - Never use paid APIs without my permission
 - Explain what you're going to do before doing anything that changes files or runs commands
-- If you're not sure about something, ask — don't guess
+- If you're not sure about something, ask, don't guess
 - Don't touch [folders that are off-limits]
 ```
 
@@ -86,7 +86,7 @@ Once you've done the orientation, you're ready to start real work. But keep it s
 1. **Ask it a question** about something you know the answer to. See if it answers well.
 2. **Ask it to read a file** and summarize it. See if it reads the right file and gives you an accurate summary.
 3. **Ask it to write a small file.** A todo list, a summary of a project, anything low-stakes. Check the file. Is it what you wanted?
-4. **Correct it.** If it got something wrong — and it will — correct it and ask it to save the correction. This is how it learns.
+4. **Correct it.** If it got something wrong, and it will, correct it and ask it to save the correction. This is how it learns.
 5. **If the agent responds unexpectedly or does something you didn't ask for:**
    - Say "stop" immediately.
    - Do not approve any further actions.
@@ -119,5 +119,5 @@ A good minimum useful context is: your name, what you do, one or two active proj
 
 ## Where to go next
 
-- [02 - Context](../02-context) — How to write context files that make your agent actually useful
-- [03 - Memory](../03-memory) — How agent memory works and why it fills up
+- [02 - Context](../02-context) - How to write context files that make your agent actually useful
+- [03 - Memory](../03-memory) - How agent memory works and why it fills up
