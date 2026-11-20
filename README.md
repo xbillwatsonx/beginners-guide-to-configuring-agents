@@ -2,9 +2,36 @@
 
 **You installed an AI agent. Now what?**
 
-This is a beginner-friendly, hype-free guide to setting up and configuring your first local AI agent harness.
+This guide helps you go from "fresh install, knows nothing about you" to "agent that actually feels like a partner." It is beginner-friendly, hype-free, and uses real prompts and real outcomes you can copy and paste.
 
-A **harness** is the program that runs your AI agent and gives it tools to read and write files, run commands, and work with you. It is the "body" the AI runs inside. We use [Hermes Agent](https://hermes-agent.nousresearch.com) as the worked example throughout, but the concepts, patterns, and lessons transfer to any local agent harness you might use now or in the future.
+We use [Hermes Agent](https://hermes-agent.nousresearch.com) as the worked example throughout, but the concepts, patterns, and lessons transfer to any local agent harness you might use now or in the future.
+
+---
+
+## Your First 10 Minutes
+
+Use your first 10 minutes to understand the path and take one useful step. You do not need to finish the full setup today.
+
+1. Read [Why Setup Matters](00-start-here/why-setup-matters.md).
+2. Read [What to Expect](00-start-here/what-to-expect.md).
+3. If you have not installed an agent yet, open the [Hermes Install Guide](01-install/hermes-install-guide.md) and check the prerequisites before changing anything.
+4. If Hermes already responds, use the [Post-Install Checklist](01-install/post-install-checklist.md) to verify the setup.
+5. When the setup checks pass, copy the first prompt from [Copy-Paste Context Prompts](02-context/copy-paste-prompts.md) into your agent.
+
+Stop there for your first session if you want. Your agent will interview you one section at a time, then show you drafts before writing files.
+
+---
+
+## Quick Completion Checklist
+
+- [ ] I read why setup matters and what to expect
+- [ ] I installed Hermes (or my chosen harness) and verified it runs
+- [ ] I completed the post-install checklist
+- [ ] I gave my agent the context interview prompt and reviewed the drafts
+- [ ] I reviewed and approved my first AGENTS.md, SOUL.md, USER.md, and MEMORY.md drafts
+- [ ] I know where the [Templates](templates/README.md) live for future updates
+
+---
 
 ## Who this is for
 
