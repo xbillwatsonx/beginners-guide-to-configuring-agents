@@ -6,6 +6,8 @@ This guide helps you go from "fresh install, knows nothing about you" to "agent 
 
 We use [Hermes Agent](https://hermes-agent.nousresearch.com) as the worked example throughout, but the concepts, patterns, and lessons transfer to any local agent harness you might use now or in the future.
 
+Want more practical, beginner-friendly guidance for working with AI agents? Follow Bill on GitHub: [github.com/xbillwatsonx](https://github.com/xbillwatsonx).
+
 ---
 
 ## Your First 10 Minutes
@@ -88,6 +90,13 @@ If you are brand new, read in order:
 This guide focuses on **configuration and customization**, the stuff that happens after installation. We use Hermes Agent as our example because it's what we use. But the patterns here (context files, memory management, scheduled maintenance, the buddy system) apply broadly to any local agent harness.
 
 If you're using a different harness, the concepts transfer. The specific commands and file paths won't, but the *what* and *why* will.
+
+## What to Read Next
+
+This guide covers configuration. These companion packages cover the rest of the beginner path:
+
+1. [Justfile Beginner Runbook](https://github.com/xbillwatsonx/justfile-beginner-runbook) - Give your newly configured agent a simple command menu for any project, so it stops guessing how to run things.
+2. [OKF Beginner Runbook](https://github.com/xbillwatsonx/okf-beginner-runbook) - Turn your agent's context into a structured knowledge base it can actually use.
 
 ## License
 
